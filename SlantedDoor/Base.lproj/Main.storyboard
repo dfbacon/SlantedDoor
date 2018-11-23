@@ -259,6 +259,95 @@
                                     <constraint firstItem="dvb-MF-Rku" firstAttribute="width" secondItem="gPf-CG-5lH" secondAttribute="width" id="hI4-Og-pKH"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t5D-qi-aac" userLabel="MiddleSectionStackView">
+                                <rect key="frame" x="306" y="182.5" width="770" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rl-At-UFW" userLabel="M9Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="65"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="M9">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbZ-Ft-adC" userLabel="M8Button">
+                                        <rect key="frame" x="86.5" y="0.0" width="77" height="65"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="M8">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mm-rg-bd9" userLabel="M7Button">
+                                        <rect key="frame" x="173.5" y="0.0" width="76.5" height="65"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="M7">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A04-KP-2Uh" userLabel="M6Button">
+                                        <rect key="frame" x="260" y="0.0" width="76.5" height="65"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="M6">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awp-Ku-asy" userLabel="M5Button">
+                                        <rect key="frame" x="346.5" y="0.0" width="77" height="65"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="M5">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sh-yT-2M4" userLabel="M4Button">
+                                        <rect key="frame" x="433.5" y="0.0" width="76.5" height="65"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="M4">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zj-u6-EUi" userLabel="M3Button">
+                                        <rect key="frame" x="520" y="0.0" width="76.5" height="65"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="M3">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqB-p4-a88" userLabel="M2Button">
+                                        <rect key="frame" x="606.5" y="0.0" width="77" height="65"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="M2">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFm-aT-mYi" userLabel="M1Button">
+                                        <rect key="frame" x="693.5" y="0.0" width="76.5" height="65"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="M1">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UFm-aT-mYi" firstAttribute="width" secondItem="SqB-p4-a88" secondAttribute="width" id="5Tj-6v-IdX"/>
+                                    <constraint firstItem="UFm-aT-mYi" firstAttribute="width" secondItem="7rl-At-UFW" secondAttribute="width" id="PXd-Lk-4RI"/>
+                                    <constraint firstItem="UFm-aT-mYi" firstAttribute="width" secondItem="kbZ-Ft-adC" secondAttribute="width" id="Rvd-1p-pbJ"/>
+                                    <constraint firstItem="UFm-aT-mYi" firstAttribute="width" secondItem="6zj-u6-EUi" secondAttribute="width" id="e98-LU-dVe"/>
+                                    <constraint firstItem="UFm-aT-mYi" firstAttribute="width" secondItem="A04-KP-2Uh" secondAttribute="width" id="hON-ol-oED"/>
+                                    <constraint firstItem="UFm-aT-mYi" firstAttribute="width" secondItem="Awp-Ku-asy" secondAttribute="width" id="mRj-Zc-uQO"/>
+                                    <constraint firstItem="UFm-aT-mYi" firstAttribute="width" secondItem="6Sh-yT-2M4" secondAttribute="width" id="tlU-nC-ka1"/>
+                                    <constraint firstItem="UFm-aT-mYi" firstAttribute="width" secondItem="8Mm-rg-bd9" secondAttribute="width" id="wC3-YY-Jla"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FU-I3-Da3" userLabel="91Button">
+                                <rect key="frame" x="134" y="145" width="140" height="140"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="DgV-bj-8HE"/>
+                                    <constraint firstAttribute="height" constant="140" id="jCH-yb-Vce"/>
+                                </constraints>
+                                <state key="normal" title="91">
+                                    <color key="titleColor" red="0.79738956719999998" green="0.69704453070000005" blue="0.069547561339999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7SH-Gz-s4l" userLabel="CafeStackView">
                                 <rect key="frame" x="1108" y="189" width="238" height="341.5"/>
                                 <subviews>
@@ -757,14 +846,18 @@
                             <constraint firstItem="u6X-v9-hTE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="42X-UV-0gw"/>
                             <constraint firstItem="gLm-T4-PLx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4km-91-Vak"/>
                             <constraint firstAttribute="bottom" secondItem="kNx-6a-2rW" secondAttribute="bottom" id="4sS-1c-yr0"/>
+                            <constraint firstItem="t5D-qi-aac" firstAttribute="leading" secondItem="7FU-I3-Da3" secondAttribute="trailing" constant="32" id="5Fs-MA-618"/>
                             <constraint firstItem="P1x-6K-GQK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="5RY-JT-UDn"/>
                             <constraint firstItem="kNx-6a-2rW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Ir-mb-FOo"/>
                             <constraint firstItem="O9a-9c-03W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6J6-zS-z0N"/>
+                            <constraint firstItem="t5D-qi-aac" firstAttribute="height" secondItem="hOZ-Kg-7cN" secondAttribute="height" id="74U-9v-nUi"/>
                             <constraint firstItem="c2g-ru-1jO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Bb-zB-6zJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s62-B7-KN0" secondAttribute="bottom" constant="8" id="9IQ-0t-q2Z"/>
+                            <constraint firstItem="7SH-Gz-s4l" firstAttribute="leading" secondItem="t5D-qi-aac" secondAttribute="trailing" constant="32" id="9mC-od-fDF"/>
                             <constraint firstItem="P1x-6K-GQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9rH-li-E18"/>
                             <constraint firstItem="7SH-Gz-s4l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="165" id="Aq2-lm-IGS"/>
                             <constraint firstItem="5op-3D-8Tb" firstAttribute="leading" secondItem="O9a-9c-03W" secondAttribute="leading" id="BF1-Aa-nti"/>
+                            <constraint firstItem="7FU-I3-Da3" firstAttribute="top" secondItem="hOZ-Kg-7cN" secondAttribute="bottom" constant="36" id="BhO-Kb-0Zb"/>
                             <constraint firstItem="tem-BF-ZuW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Cxf-9U-q9C"/>
                             <constraint firstItem="hOZ-Kg-7cN" firstAttribute="leading" secondItem="P1x-6K-GQK" secondAttribute="trailing" constant="8" id="DXZ-DE-tAE"/>
                             <constraint firstItem="u6X-v9-hTE" firstAttribute="leading" secondItem="RBj-HH-rZX" secondAttribute="trailing" constant="588" id="Hc3-1s-1ca"/>
@@ -784,6 +877,7 @@
                             <constraint firstItem="gLm-T4-PLx" firstAttribute="leading" secondItem="RBj-HH-rZX" secondAttribute="trailing" constant="8" id="a8H-BG-Gan"/>
                             <constraint firstItem="tem-BF-ZuW" firstAttribute="leading" secondItem="Uwk-CQ-wOK" secondAttribute="trailing" constant="480" id="bNV-qz-cDd"/>
                             <constraint firstItem="Uwk-CQ-wOK" firstAttribute="top" secondItem="RBj-HH-rZX" secondAttribute="bottom" constant="830" id="bSS-ie-tfB"/>
+                            <constraint firstItem="t5D-qi-aac" firstAttribute="centerY" secondItem="7FU-I3-Da3" secondAttribute="centerY" id="buz-tB-MMM"/>
                             <constraint firstItem="P1x-6K-GQK" firstAttribute="leading" secondItem="O9a-9c-03W" secondAttribute="trailing" constant="8" id="cCz-7B-cUY"/>
                             <constraint firstItem="A4b-dC-5NK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cQK-fg-0Bw"/>
                             <constraint firstItem="Uwk-CQ-wOK" firstAttribute="leading" secondItem="s62-B7-KN0" secondAttribute="trailing" constant="8" id="ef4-lO-c0q"/>
@@ -795,6 +889,7 @@
                             <constraint firstItem="c2g-ru-1jO" firstAttribute="top" secondItem="A4b-dC-5NK" secondAttribute="bottom" constant="8" id="lbK-Ig-QqU"/>
                             <constraint firstItem="s62-B7-KN0" firstAttribute="top" secondItem="c2g-ru-1jO" secondAttribute="bottom" constant="8" id="mHr-dh-uqu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hOZ-Kg-7cN" secondAttribute="bottom" constant="895" id="pWd-vi-keQ"/>
+                            <constraint firstItem="7FU-I3-Da3" firstAttribute="leading" secondItem="O9a-9c-03W" secondAttribute="trailing" constant="36" id="s5h-3N-SQc"/>
                             <constraint firstItem="5op-3D-8Tb" firstAttribute="centerY" secondItem="kNx-6a-2rW" secondAttribute="centerY" constant="-12" id="sIU-4e-teV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c2g-ru-1jO" secondAttribute="trailing" constant="746" id="tmv-El-pni"/>
                             <constraint firstItem="s62-B7-KN0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uoO-e7-Ld6"/>
