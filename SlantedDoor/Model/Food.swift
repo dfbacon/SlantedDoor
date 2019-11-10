@@ -15,10 +15,12 @@ public class Food : OrderItem {
     private var _allergyList: [String]!;
     
     var allergyList: [String] {
+        
         return _allergyList
     }
     
     override init(dishName: String, price: Double) {
+        
         super.init(dishName: dishName, price: price)
         self._allergyList = []
     }
@@ -31,8 +33,11 @@ public class Food : OrderItem {
      - Precondition: `newAllergen` must not be an empty string.
     */
     func addNewAllergen(newAllergen: String) -> Void {
+        
         if !newAllergen.isEmpty {
-            if !_allergyList.contains(newAllergen.lowercased()) {
+        
+            if !allergyList.contains(newAllergen.lowercased()) {
+            
                 _allergyList.append(newAllergen.lowercased())
             }
         }
@@ -46,8 +51,11 @@ public class Food : OrderItem {
      - Precondition: `allergenList` must not be an empty array.
     */
     func addNewAllergen(allergenList: [String]) -> Void {
-        if allergenList.isEmpty {
+        
+        if !allergenList.isEmpty {
+        
             for entry in allergenList {
+            
                 addNewAllergen(newAllergen: entry)
             }
         }
@@ -66,8 +74,10 @@ public class Food : OrderItem {
      otherwise nil.
     */
     func removeAllergen(toRemove: String) -> String? {
-        if !_allergyList.isEmpty && !toRemove.isEmpty {
-            if let indexToRemove = _allergyList.firstIndex(of:
+        
+        if !allergyList.isEmpty && !toRemove.isEmpty {
+        
+            if let indexToRemove = allergyList.firstIndex(of:
                 toRemove.lowercased()) {
                 
                 return _allergyList.remove(at: indexToRemove)
@@ -82,7 +92,9 @@ public class Food : OrderItem {
      Removes all items from the list of allergens.
     */
     func clearAllergens() -> Void {
-        if !_allergyList.isEmpty{
+        
+        if !allergyList.isEmpty{
+        
             _allergyList.removeAll()
         }
     }

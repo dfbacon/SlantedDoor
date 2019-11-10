@@ -25,42 +25,55 @@ public class Table {
     
     
     var tableNumber: Int {
+        
         get {
+            
             return _tableNumber
         }
         
         set {
+            
             if newValue >= 0 {
+                
                 _tableNumber = newValue
             }
         }
     }
     
     var guestCount: Int {
+        
         get {
+            
             return _guestCount
         }
         
         set {
+            
             if newValue >= 0 {
+                
                 _guestCount = newValue
             }
         }
     }
     
     var currentStatus: String {
+        
         get {
-            return _currentStatus
+            
+            return _currentStatus.capitalized
         }
         
         set {
+            
             if !newValue.isEmpty {
+                
                 _currentStatus = newValue
             }
         }
     }
     
     var timeCreated: Date {
+        
         return _timeCreated
     }
     
@@ -76,6 +89,7 @@ public class Table {
      timestamp for its creation and the table's status set to "Seated".
     */
     init(tableNumber: Int, guestCount: Int) {
+        
         self._tableNumber = tableNumber
         self._guestCount = guestCount
         self._timeCreated = Date()
@@ -91,9 +105,13 @@ public class Table {
      - Returns: Formatted string of the amount of time the table has been active.
     */
     func elapsedTime() -> String {
+        
+        //TODO: handle if hour goes past 24
+        
         let seconds = Int(_timeCreated.timeIntervalSinceNow * -1)
         
         if seconds > 59 {
+            
             let minuteString = String(format: "%02d", (seconds % 3600) / 60)
             let hourString = String(format: "%02d", seconds / 3600)
             let secondString = String(format: "%02d", (seconds % 3600) % 60)
@@ -101,6 +119,7 @@ public class Table {
             return "\(hourString):\(minuteString):\(secondString)"
         }
         else {
+            
             let secondString = String(format: "%02d", seconds)
             
             return "00:00:\(secondString)"

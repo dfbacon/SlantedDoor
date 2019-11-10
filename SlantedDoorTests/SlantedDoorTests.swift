@@ -13,12 +13,14 @@ class SlantedDoorTests: XCTestCase {
 
     private var newItem: OrderItem!
     private var newFood: Food!
+    private var newBev: Beverage!
     private var newTable: Table!
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         newItem = OrderItem(dishName: "new order item", price: 48.00)
         newFood = Food(dishName: "new food item", price: 35.00)
+        newBev = Beverage(dishName: "new beverage", price: 15.00)
         newTable = Table(tableNumber: 99, guestCount: 4)
     }
 
@@ -37,6 +39,8 @@ class SlantedDoorTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    /// OrderItem model tests
     
     func testGetSetOrderItem() {
         
@@ -95,7 +99,7 @@ class SlantedDoorTests: XCTestCase {
         XCTAssertTrue(newItem.ingredientList.count == 1)
     }
     
-    func testAddIngredientList() {
+    func testAddIngredients() {
         
         XCTAssertTrue(newItem.ingredientList.isEmpty)
 
@@ -144,5 +148,80 @@ class SlantedDoorTests: XCTestCase {
         
         newItem.clearIngredients()
         XCTAssertTrue(newItem.ingredientList.isEmpty)
+    }
+    
+    func testDisplayPrice() {
+        
+        XCTAssertTrue(newItem.ingredientList.isEmpty)
+        
+        XCTAssertEqual(newItem.displayPrice(), "$48.00")
+        XCTAssertNotEqual("$\(newItem.price)", newItem.displayPrice())
+    }
+    
+    /// Food model tests
+    
+    func testAddAllergen() {
+        
+        XCTAssertTrue(newFood.allergyList.isEmpty)
+        
+        newFood.addNewAllergen(newAllergen: "New Allergen")
+        XCTAssertFalse(newFood.allergyList.isEmpty)
+        XCTAssertEqual(newFood.allergyList[0], "new allergen")
+    }
+    
+    func testAddAllergens() {
+        
+        XCTAssertTrue(newFood.allergyList.isEmpty)
+        
+        let allergenList = ["allergen1", "allergen2", "allergen3", "allergen4"]
+        
+        newFood.addNewAllergen(allergenList: allergenList)
+        XCTAssertFalse(newFood.allergyList.isEmpty)
+        XCTAssertTrue(newFood.allergyList.count == 4)
+        XCTAssertEqual(newFood.allergyList[0], "allergen1")
+    }
+    
+    /// Beverage model tests
+    
+    func testBeverageIsLiquor() {
+        
+        XCTAssertFalse(newBev.isLiquor)
+        
+        newBev.isLiquor = true
+        XCTAssertTrue(newBev.isLiquor)
+    }
+    
+    /// Table model tests
+    
+    func testTableGetSet() {
+        
+        XCTAssertTrue(newTable.tableNumber == 99)
+        newTable.tableNumber = 100
+        newTable.tableNumber = -1
+        XCTAssertFalse(newTable.tableNumber == -1)
+        XCTAssertTrue(newTable.tableNumber == 100)
+        
+        XCTAssertTrue(newTable.guestCount == 4)
+        newTable.guestCount = 3
+        newTable.guestCount = -3
+        XCTAssertFalse(newTable.guestCount == -3)
+        XCTAssertTrue(newTable.guestCount == 3)
+        
+        XCTAssertTrue(newTable.currentStatus == "Seated")
+        newTable.currentStatus = "entree"
+        newTable.currentStatus = ""
+        XCTAssertFalse(newTable.currentStatus == "")
+        XCTAssertFalse(newTable.currentStatus == "entree")
+        XCTAssertTrue(newTable.currentStatus == "Entree")
+        
+        XCTAssertNotNil(newTable.timeCreated)
+    }
+    
+    func testElapsedTime() {
+        XCTAssertNotNil(newTable.timeCreated)
+        
+        sleep(65)
+        
+        XCTAssertEqual(newTable.elapsedTime(), "00:01:05")
     }
 }

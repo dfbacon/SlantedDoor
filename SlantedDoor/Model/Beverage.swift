@@ -15,16 +15,20 @@ public class Beverage : OrderItem {
     private var _isLiquor: Bool!
     
     override init(dishName: String, price: Double) {
+        
         super.init(dishName: dishName, price: price)
         self._isLiquor = false;
     }
 
     var isLiquor: Bool {
+        
         get {
+            
             return _isLiquor
         }
         
         set {
+            
             self._isLiquor = newValue
         }
     }
